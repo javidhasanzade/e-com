@@ -4,7 +4,7 @@ import de.jh.ecom.payload.CategoryDto;
 import de.jh.ecom.payload.CategoryResponse;
 
 public interface CategoryService {
-    CategoryResponse getAllCategories(Integer pageNumber, Integer pageSize);
+    CategoryResponse getAllCategories(Integer pageNumber, Integer pageSize, String sortBy, String sortOrder);
     CategoryDto createCategory(CategoryDto categoryDto);
     CategoryDto deleteCategory(Long id);
     CategoryDto updateCategory(CategoryDto categoryDto, Long categoryId);
